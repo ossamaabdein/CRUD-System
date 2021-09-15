@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="./css/bootstrap.min.css">
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+    <body>
+    
+        <!-- Form inputs -->
+        <div class="form-container mt-5">
+            <div class="system">
+                <h1 class="text-center">CRUD System</h1>
+                <div>
+                    <label for="">Product Name:</label>
+                    <input type="text" id="productName" placeholder="Ex: iPhone-7" class="form-control">
+                </div>
+                <div class="alert alert-danger w-100 mt-2 py-2 d-none" id="nameWarning">Enter a name, please!</div>
+                <div>
+                    <label for="">Product Category:</label>
+                    <input type="text" id="productCategory" placeholder="Ex: mobile" class="form-control">
+                </div>
+                <div class="alert alert-danger w-100 mt-2 py-2 d-none" id="categoryWarning">Enter a category, please!</div>
+                <div>
+                    <label for="">Product Price (LE.):</label>
+                    <input type="number" id="productPrice" placeholder="Ex: 5000" class="form-control">
+                </div>
+                <div class="alert alert-danger w-100 mt-2 py-2 d-none" id="priceWarning">Enter a price, please!</div>
+                <div>
+                    <label for="">Product Description:</label>
+                    <input type="text" id="productDescription" placeholder="Ex: 128GB Memory, 14MP Camera, 7.8inch screen" class="form-control">
+                </div>
+                <div class="alert alert-danger w-100 mt-2 py-2 d-none" id="descWarning">Enter a description, please!</div>
+                <button class="btn bg-success text-light" id="addBtn">Add Product</button>
+            </div> 
+        </div>
+
+
+        <!-- Table of products -->
+        <div class="table-container w-75 m-auto mt-5">
+            <input onkeyup="search(this.value)" class="w-50 my-3" type="text" id="searchField" placeholder="search here">
+            <div class="alert alert-danger w-50 mt-2 py-2 d-none" id="searchWarning">No such product in the list</div>
+
+            <table class="table table-striped table-bordered text-center align-middle mb-5">
+                <thead class=" table-head align-middle">
+                    <tr>
+                        <th>#</th>
+                        <th>Product Name</th>
+                        <th>Product Category</th>
+                        <th>Product Price (LE.)</th>
+                        <th>Product Description</th>
+                        <th>Delete</th>
+                        <th>Update</th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody"></tbody>
+            </table>
+        </div>
+
+        <script src="./js/main.js"></script>
+        <script src="./js/bootstrap.min.js"></script>
+        <script src="./js/popper.min.js"></script>
+    </body>
+</html>

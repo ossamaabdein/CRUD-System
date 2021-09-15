@@ -1,0 +1,71 @@
+.navbar a span {
+    color: #b15050;
+}
+
+
+.form-container {
+    display: flex;
+    align-items: center;
+}
+.system {
+    width: 50%;
+    margin: auto;
+}
+
+.system h1 {
+    margin-bottom: 15px;
+}
+
+.system div {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 15px;
+}
+
+.system div label {
+    padding-bottom: 10px;
+}
+
+.system div input {
+    padding: 5px;
+}
+
+.system div input::placeholder {
+    font-size: 13px;
+}
+
+@media screen and (max-width: 1000px) {
+    .system {
+        width: 75%;
+    }
+    .table-container {
+        width: 90% !important;
+    }
+
+    .table-container .table-head {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .system {
+        width: 85%;
+    }
+    .table-container {
+        width: 98% !important;
+    }
+
+    .table-container .table-head {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .table-container .table-head {
+        font-size: 11px;
+    }
+    #tableBody {
+        font-size: 10px;
+    }
+}
+

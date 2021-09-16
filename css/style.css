@@ -2,11 +2,15 @@
     color: #b15050;
 }
 
-
 .form-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
+
 .system {
     width: 50%;
     margin: auto;
@@ -17,8 +21,13 @@
 }
 
 .system div {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     padding-bottom: 15px;
 }
 
@@ -28,6 +37,22 @@
 
 .system div input {
     padding: 5px;
+}
+
+.system div input::-webkit-input-placeholder {
+    font-size: 13px;
+}
+
+.system div input::-moz-placeholder {
+    font-size: 13px;
+}
+
+.system div input:-ms-input-placeholder {
+    font-size: 13px;
+}
+
+.system div input::-ms-input-placeholder {
+    font-size: 13px;
 }
 
 .system div input::placeholder {
@@ -49,23 +74,16 @@
 
 @media screen and (max-width: 768px) {
     .system {
-        width: 85%;
+        width: 90%;
+        margin: auto;
     }
+    
     .table-container {
-        width: 98% !important;
+        width: 97% !important;
     }
 
     .table-container .table-head {
         font-size: 15px;
-    }
-}
-
-@media screen and (max-width: 576px) {
-    .table-container .table-head {
-        font-size: 11px;
-    }
-    #tableBody {
-        font-size: 10px;
     }
 }
 

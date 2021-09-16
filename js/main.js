@@ -104,7 +104,7 @@ priceInput.onkeyup = function checkName() {
 }
 
 descriptionInput.onkeyup = function checkName() {
-    var descChecker = /^[A-za-z0-9 ]{5,800}$/;
+    var descChecker = /^.{0,800}$/gm;
     if (!descChecker.test(descriptionInput.value)) {
         descriptionInput.classList.add("is-invalid");
         descriptionInput.classList.remove("is-valid");

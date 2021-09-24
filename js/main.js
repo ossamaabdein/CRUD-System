@@ -77,7 +77,7 @@ nameInput.onkeyup = function checkName() {
     }
 }
 
-categoryInput.onkeyup = function checkName() {
+categoryInput.onkeyup = function checkCategory() {
     var categoryChecker = /^[A-za-z ]{3,20}$/;
     if (!categoryChecker.test(categoryInput.value)) {
         categoryInput.classList.add("is-invalid");
@@ -90,7 +90,7 @@ categoryInput.onkeyup = function checkName() {
     }
 }
 
-priceInput.onkeyup = function checkName() {
+priceInput.onkeyup = function checkPrice() {
     var priceChecker = /^[0-9]{1,6}$/;
     if (!priceChecker.test(priceInput.value)) {
         priceInput.classList.add("is-invalid");
@@ -103,7 +103,7 @@ priceInput.onkeyup = function checkName() {
     }
 }
 
-descriptionInput.onkeyup = function checkName() {
+descriptionInput.onkeyup = function checkDescripton() {
     var descChecker = /^.{3,800}$/gm;
     if (!descChecker.test(descriptionInput.value)) {
         descriptionInput.classList.add("is-invalid");
